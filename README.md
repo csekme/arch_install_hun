@@ -404,6 +404,7 @@ username ALL=(ALL) ALL
 
 ### 1.5 Initramfs és bootloader beállítása
 
+Az [initramfs](/INITRAMFS.md) (initial RAM filesystem) egy ideiglenes fájlrendszer, amelyet a Linux kernel használ a rendszer indítási folyamatának korai szakaszában. Az initramfs biztosítja a szükséges környezetet ahhoz, hogy a kernel betölthesse a rendszer fő fájlrendszerét és elindíthassa az init folyamatot. Az initramfs tartalmazza azokat az eszközmeghajtókat, modulokat és segédprogramokat, amelyek szükségesek az alapvető rendszerindítási feladatok elvégzéséhez.
 
 #### 1.5.a Titkosított systemd-boot partíció esetén
 

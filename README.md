@@ -33,6 +33,8 @@
     - [Error: To install Python packages system-wide, try 'pacman -S](#error-to-install-python-packages-system-wide-try-pacman--s)
   - [5.2 Postman](#52-postman)
   - [5.3 Visual studio](#53-visual-studio)
+  - [5.4 Flameshot](#54-flameshot)
+  - [5.5 Rendszer monitor](#55-rendszer-monitor)
 - [6 Egyéb csomagok telepítése](#6-egyéb-csomagok-telepítése)
 
 ## Jogi nyilatkozat
@@ -658,6 +660,20 @@ yay visual-studio-code-bin
 Gnome extensions places open vscode issue
 ```bash
 xdg-mime default org.gnome.Nautilus.desktop inode/directory
+```
+
+### 5.4 Flameshot
+
+Flameshot telepítése flatpak segítségével
+```bash
+flatpak install org.flameshot.Flameshot
+flatpak permission-set screenshot screenshot org.flameshot.Flameshot yes
+```
+
+### 5.5 Rendszer monitor
+
+```bash
+flatpak install io.missioncenter.MissionCenter 
 ```
 
 

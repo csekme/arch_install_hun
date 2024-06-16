@@ -414,6 +414,8 @@ Az [initramfs](/INITRAMFS.md) (initial RAM filesystem) egy ideiglenes fájlrends
 
 ```
 chmod 755 /boot
+TODO: fmask=0077 dmask=0077 az fstab-ban a boot-ra
+
 ```
 
 Telepítsük a szükséges csomagokat
@@ -449,7 +451,7 @@ timeout 5
 editor 0
 ```
 
-Hozd létre az Arch Linux boot bejegyzést:
+Hozd létre az Arch Linux boot bejegyzést /boot/loader/entries/arch.conf:
 
 ```
 title   Arch Linux
